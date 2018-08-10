@@ -1,4 +1,7 @@
 <h1>Inspirational quotes</h1>
 <ul>
-  <li *ngFor='let quote of quotes'>{{quote.name}}</li>
+  <div *ngFor='let quote of quotes'>
+    <li>{{quote.description}}</li>
+    <li>{{quote.id}}</li>
+  </div>
 </ul>
