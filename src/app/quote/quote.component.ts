@@ -9,7 +9,7 @@ export class QuoteComponent implements OnInit {
 
     quotes= [
       new Quote(1,'One of the happiest moments is having the courage to let go of something yo cannot change','Annstella Kagai',new Date(2018/8/10)),
-      new Quote(2,'Creativity takes courage','Henri Matisse',new Date(1999/8/3))
+      new Quote(2,'Creativity takes courage','Henri Matisse',new Date(1999/8/3)),
     ]
   constructor() { }
 

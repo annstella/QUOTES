@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { QuoteComponent } from './quote/quote.component';
-import { Quote } from './quote.details/quote.details.component';
+import { Quote } from './quote-details/quote-details.component';
 import { QuoteDetailsComponent } from './quote-details/quote-details.component';
 
 @NgModule({
