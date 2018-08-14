@@ -13,9 +13,13 @@ export class QuoteComponent implements OnInit {
       new Quote(3, 'What does not kill you makes you stronger', 'Kelly Clarkson', 'Brian', 0, 0 , new Date(2009, 3, 14)),
     ];
 
-    deleteGoal(isComplete, index) {
+
+    addNewQuote(quote) {
+      this.quotes.push(quote);
+    }
+    deleteQuote(isComplete, index) {
             if (isComplete) {
-                let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].name}`);
+                const toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].name}`);
                 if (toDelete) {
                     this.quotes.splice(index, 1);
                 }
