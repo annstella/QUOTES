@@ -1,6 +1,19 @@
-# Quotes
+##Quotes.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.2.
+
+##Author.
+
+Annstella Kagai.
+
+Description.
+
+In the application,one requires to type in a quote and the poster and just click,submit!Easy
+Additionally,you can also like or dislike a quote by clicking either an upvote or a downvote.
+
+##Link to deployed site.
+
+https://annstella.github.io/quotes/
 
 ## Development server
 
