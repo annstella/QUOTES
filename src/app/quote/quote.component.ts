@@ -29,7 +29,12 @@ export class QuoteComponent implements OnInit {
 toogleDetails(index) {
       this.quotes[index].showDescription = !this.quotes[index].showDescription;
     }
-
+upvote(index) {
+  this.quotes[index].upvotes++;
+}
+downvote(index) {
+  this.quotes[index].downvotes++;
+}
   constructor() { }
 
   ngOnInit() {

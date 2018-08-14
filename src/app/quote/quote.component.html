@@ -1,14 +1,19 @@
-<h1>QUOTES</h1>
+
 <hr>
 <div class="container">
+  <h1>QUOTES</h1>
   <div class="row" *ngFor="let quote of quotes;let i = 'index'">
       <div class="row">
 
       </div>
 <ul>
-        <li id="{{i}}" appStrikethrough>{{quote.name}}</li>
-        <li  id="{{i}}" appStrikethrough>{{quote.name}} due on {{quote.completeDate|date|uppercase}}</li>
+
+        <li  id="{{i}}" appStrikethrough>{{quote.name}} posted on <b>{{quote.completeDate|date|uppercase}}</b></li>
         <button class="btn-primary" (click)='toogleDetails(i)'>Toogle Details</button>
+        &nbsp;
+        <button (click)='upvote(i)' class="btn btn-success">Upvote {{quote.upvotes}}</button>
+        &nbsp;
+        <button (click)='downvote(i)' class="btn btn-warning">Downvote {{quote.downvotes}}</button>
 
 
         <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)= 'deleteQuote($event,i)'></app-quote-details>

@@ -14,14 +14,7 @@ export class QuoteDetailsComponent implements OnInit {
       this.isComplete.emit(complete);
 }
 
-upvote(i) {
-  alert('you liked this post');
-}
 
-downvote(i) {
-  alert('you disliked this post');
-
-}
 
   constructor() { }
 
